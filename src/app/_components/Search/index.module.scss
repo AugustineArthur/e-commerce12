@@ -1,0 +1,27 @@
+/* styles/Search.module.scss */
+
+.searchcontainer {
+    display: flex;
+    align-items: center;
+    
+  
+    input {
+      padding: 8px;
+      margin-right: 8px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-weight: 300px;
+      width: 7cm;
+    }
+  
+    button {
+      padding: 8px 12px;
+      background-color: black;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: 100;
+      font-style: bold;
+    }
+  }
+  

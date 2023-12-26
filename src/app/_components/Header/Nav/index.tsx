@@ -8,7 +8,10 @@ import { useAuth } from '../../../_providers/Auth'
 import { Button } from '../../Button'
 import { CartLink } from '../../CartLink'
 import { CMSLink } from '../../Link'
-
+import Search from '../../Search'
+import { Gutter } from '../../Gutter'
+import Image from 'next/image'
+import Searchh from '../../../(pages)/search/page'
 import classes from './index.module.scss'
 
 export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
@@ -20,6 +23,12 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       {navItems.map(({ link }, i) => {
         return <CMSLink key={i} {...link} appearance="none" />
       })}
+
+      <Search />
+
+      {/* <Link href="/Search" className={classes.nav}>
+        <Image src="/icons8-google-web-search.svg" alt="logo" width={24} height={24} />
+      </Link> */}
 
       {user && <Link href="/account">Account</Link>}
       {!user && (
